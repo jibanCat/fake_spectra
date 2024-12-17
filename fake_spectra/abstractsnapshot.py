@@ -116,6 +116,8 @@ class AbstractSnapshot(object):
         vel = self.get_data(part_type, "Velocities", segment = segment)
         atime = self.get_header_attr("Time")
         vel *= np.sqrt(atime)
+        # set peculiar velocity to zero
+        vel *= 0
         return vel
 
     def get_temp(self,part_type, segment,hy_mass=0.76, units=None):
