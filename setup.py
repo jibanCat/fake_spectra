@@ -100,7 +100,7 @@ cmodule = [
             include_dirs = ["fake_spectra/", numpy.get_include()])]
 
 setup(
-    name="fake_spectra",
+    name="fake_spectra_nopec",
     version='2.2.3',
     author="Simeon Bird",
     author_email="spb@ucr.edu",
