@@ -405,4 +405,6 @@ class BigFileSnapshot(AbstractSnapshot):
         if not pecvel:
             atime = self.get_header_attr("Time")
             vel /= atime
+        # set peculiar velocity to zero
+        vel *= 0
         return vel
